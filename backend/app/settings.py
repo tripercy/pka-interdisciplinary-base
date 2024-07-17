@@ -154,8 +154,10 @@ def init_gemini():
     model_name = f"models/{os.getenv('MODEL')}"
     embed_model_name = f"models/{os.getenv('EMBEDDING_MODEL')}"
 
-    Settings.llm = Gemini(model=model_name)
-    Settings.embed_model = GeminiEmbedding(model_name=embed_model_name)
+    print(model_name)
+
+    Settings.llm = Gemini(model=model_name, transport='rest')
+    Settings.embed_model = GeminiEmbedding(model_name=embed_model_name, transport='rest')
 
 
 def init_mistral():
