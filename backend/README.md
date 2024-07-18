@@ -2,6 +2,8 @@ This is a [LlamaIndex](https://www.llamaindex.ai/) project using [FastAPI](https
 
 ## Getting Started
 
+Create your environment file using the file template in `environment.example` with the name `.env`.
+
 First, setup the environment with poetry:
 
 > **_Note:_** This step is not needed if you are using the dev-container.
